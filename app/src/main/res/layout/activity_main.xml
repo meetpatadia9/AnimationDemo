@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/zebru_image"/>
+
+    <Button
+        android:id="@+id/btn_fade_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fade in"
+        android:layout_below="@id/image"/>
+
+    <Button
+        android:id="@+id/btn_fade_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="-49dp"
+        android:layout_toRightOf="@+id/btn_fade_in"
+        android:text="fade out" />
+
+    <Button
+        android:id="@+id/btn_move_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move up"
+        android:layout_below="@+id/btn_fade_in"/>
+
+    <Button
+        android:id="@+id/btn_move_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move down"
+        android:layout_below="@id/btn_fade_in"
+        android:layout_toRightOf="@id/btn_move_up"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_move_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move right"
+        android:layout_below="@id/btn_move_up"/>
+
+    <Button
+        android:id="@+id/btn_move_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move left"
+        android:layout_toRightOf="@id/btn_move_right"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/btn_move_down"/>
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rotate"
+        android:layout_below="@id/btn_move_right"/>
+
+    <Button
+        android:id="@+id/btn_slide_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide up"
+        android:layout_toRightOf="@id/btn_rotate"
+        android:layout_below="@id/btn_move_left"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_slide_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide down"
+        android:layout_below="@id/btn_rotate"/>
+
+    <Button
+        android:id="@+id/btn_slide_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide right"
+        android:layout_toRightOf="@id/btn_slide_down"
+        android:layout_below="@id/btn_slide_up"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_slide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide left"
+        android:layout_below="@id/btn_slide_down"/>
+
+    <Button
+        android:id="@+id/btn_bounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bounce"
+        android:layout_toRightOf="@id/btn_slide_left"
+        android:layout_below="@id/btn_slide_right"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blink"
+        android:layout_below="@id/btn_slide_left"/>
+
+    <Button
+        android:id="@+id/btn_interpolater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interpolater"
+        android:layout_toRightOf="@id/btn_blink"
+        android:layout_below="@id/btn_bounce"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_zoom_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_blink"
+        android:text="zoom in"/>
+
+    <Button
+        android:id="@+id/btn_zoom_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_zoom_in"
+        android:layout_below="@id/btn_interpolater"
+        android:layout_marginLeft="10dp"
+        android:text="zoom out"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meet Patadia"
+        android:layout_below="@id/btn_zoom_in"
+        android:textColor="#AFAFAF"/>
+
+</RelativeLayout>
